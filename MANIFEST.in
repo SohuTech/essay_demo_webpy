@@ -1,0 +1,1 @@
+recursive-include  essay_demo_webpy *.css *.js *.jpg *.gif *.png *.html *.md
