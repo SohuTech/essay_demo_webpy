@@ -13,17 +13,17 @@ from essay.tasks import deploy
 
 env.GIT_SERVER = 'https://github.com/'  # ssh地址只需要填：github.com
 env.PROJECT = 'essay_demo_webpy'
-#env.DEPLOY_PATH = '/opt/deploy/'
-#env.PROJECT_OWNER = 'EssayTech'
-#env.DEFAULT_BRANCH = 'master'
-#env.PYPI_INDEX = 'http://pypi.python.org/simple/'
+env.DEPLOY_PATH = '~/buildspace'
+env.PROJECT_OWNER = 'EssayTech'
+env.DEFAULT_BRANCH = 'master'
+env.PYPI_INDEX = 'http://pypi.python.org/simple/'
 
 
 ######
 # deploy settings:
 env.PROCESS_COUNT = 2  #部署时启动的进程数目
 env.roledefs = {
-    'build': ['username@buildserverip:port']  # 打包服务器配置
+    'build': ['vagrant@127.0.0.1:2202'],  # 打包服务器配置
     'dev': [''],
 }
 
