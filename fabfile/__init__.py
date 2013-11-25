@@ -13,7 +13,7 @@ from essay.tasks import deploy
 
 env.GIT_SERVER = 'https://github.com/'  # ssh地址只需要填：github.com
 env.PROJECT = 'essay_demo_webpy'
-env.DEPLOY_PATH = '~/buildspace'
+env.BUILD_PATH = '~/buildspace'
 env.PROJECT_OWNER = 'EssayTech'
 env.DEFAULT_BRANCH = 'master'
 env.PYPI_INDEX = 'http://pypi.python.org/simple/'
